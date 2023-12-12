@@ -8,10 +8,7 @@ cities = [
 'Riga', 'Vaduz', 'Vilnius', 'Luxembourg City', 'Skopje', 'Valletta', 'Chisinau',
 'Monaco', 'Podgorica', 'Amsterdam', 'Oslo', 'Warsaw', 'Lisbon', 'Bucharest',
 'Moscow', 'San Marino', 'Belgrade', 'Bratislava', 'Ljubljana', 'Madrid', 'Stockholm',
-'Bern', 'Ankara', 'Kyiv', 'London', 'Hamburg', 'Milan', 'Barcelona', 'Vienna', 'Prague', 'Copenhagen', 'Athens',
-'Budapest', 'Reykjavik', 'Dublin', 'Rome', 'Riga', 'Luxembourg City', 'Oslo',
-'Warsaw', 'Lisbon', 'Bucharest', 'Moscow', 'Amsterdam', 'Madrid', 'Stockholm',
-'Brussels', 'Berlin', 'Paris', 'London'
+'Bern', 'Ankara', 'Kyiv', 'London', 'Hamburg', 'Milan', 'Barcelona'
 ]
 
 
