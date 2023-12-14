@@ -12,10 +12,13 @@ cities = [
 ]
 
 
-def get_weather_data(api_key, cities, hottest=True):
+def get_city_data(weather_condition):
+    api_key = "e8081ab0568ec8b77c4318ba87cece26"
     base_url = "http://api.openweathermap.org/data/2.5/weather"
-    temperature_data = {}
 
+    hottest = False if weather_condition == 'hot' else True
+
+    temperature_data = {}
     for city in cities:
         params = {
             "q": city,
@@ -34,22 +37,3 @@ def get_weather_data(api_key, cities, hottest=True):
     top_5 = dict(sorted_temperatures[:5])
 
     return top_5
-
-def main():
-    api_key = "e8081ab0568ec8b77c4318ba87cece26"
-
-    user_choice = input("Enter 'hot' for hottest capitals or 'cold' for coldest capitals: ").lower()
-    hottest = False if user_choice == 'hot' else True
-
-    top_cities = get_weather_data(api_key, cities, hottest=hottest)
-
-    if hottest:
-        print("Top 5 Hottest Capitals in Europe:")
-    else:
-        print("Top 5 Coldest Capitals in Europe:")
-
-    for city, temperature in top_cities.items():
-        print(f"{city}: {temperature}°C")
-
-if __name__ == "__main__":
-    main()
